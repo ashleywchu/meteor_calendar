@@ -71,8 +71,8 @@ class MeteorCLI
   	input = gets_user_input.capitalize
   	shower = MeteorShower.search(input)
   	if shower.nil?
-  		puts "There are no meteor showers in that month."
-  	else
+  		puts "Error: there are no meteor showers in that month, or check your spelling..."
+  	elsif input != //
     	puts "#{shower.name}: #{shower.date}"
     end   
   end
